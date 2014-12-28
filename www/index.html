@@ -26,9 +26,8 @@
             </ion-header-bar>
             <ion-content ng-controller="BoardCtrl">
                 <div class="row" ng-repeat="row in board">
-                    Row {{$index + 1}}
-                    <div class="col" ng-repeat="col in row track by $index">
-                        Col {{$index + 1}}
+                    <div class="col col-center" ng-repeat="col in row track by $index">
+                        <div class="pp-gridcell"></div> <!--{{$parent.$index + 1}} / {{$index + 1}}</div>-->
                     </div>
                 </div>
             </ion-content>

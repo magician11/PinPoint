@@ -21,3 +21,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.pp-gridcell {
+    width: 29px;
+    height: 29px;
+    background-color: #2d2d2d;
+    color: white;
+    margin: 0 auto;
+}
+
+ion-content {
+    background-color: #150a0e;
+}

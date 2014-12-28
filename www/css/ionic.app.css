@@ -7014,3 +7014,13 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.pp-gridcell {
+  width: 29px;
+  height: 29px;
+  background-color: #2d2d2d;
+  color: white;
+  margin: 0 auto; }
+
+ion-content {
+  background-color: #150a0e; }
