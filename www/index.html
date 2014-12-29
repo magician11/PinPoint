@@ -21,16 +21,23 @@
     <body ng-app="pinpoint">
 
         <ion-pane>
-            <ion-header-bar class="bar-stable">
+            <ion-header-bar class="bar-royal">
                 <h1 class="title">PinPoint</h1>
             </ion-header-bar>
             <ion-content ng-controller="BoardCtrl">
-                <div class="row" ng-repeat="row in board">
-                    <div class="col col-center" ng-repeat="col in row track by $index">
-                        <div class="pp-gridcell"></div> <!--{{$parent.$index + 1}} / {{$index + 1}}</div>-->
-                    </div>
-                </div>
+                <table class="pp-gameboard">
+                    <tr ng-repeat="row in board">
+                        <td class="pp-gridcell" ng-repeat="col in row track by $index">
+                        </td>
+                    </tr>
+                </table>
             </ion-content>
+            <ion-footer-bar class="bar-dark">
+                <h5>Your move..</h5>
+                <h1 class="pp-num-players title">2/2 players</h1>
+                <button class="button button-balanced" ng-click="starOver()">Play Again</button>
+                </div>
+            </ion-footer-bar>
         </ion-pane>
     </body>
 </html>

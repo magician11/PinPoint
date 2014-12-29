@@ -36,8 +36,8 @@ angular.module('pinpoint', ['ionic'])
         $scope.board = init($scope.height, $scope.width);
     };
 
-    $scope.height = 11;
-    $scope.width = 11;
+    $scope.height = 10;
+    $scope.width = 10;
     $scope.newGame();
 
 });
